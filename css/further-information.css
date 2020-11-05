@@ -60,7 +60,7 @@
     width: 32px;
     height: 29px;
     position: absolute;
-    background-image: url(/img/icons/tickbox.svg);
+    background-image: url(../img/icons/tickbox.svg);
     background-repeat: no-repeat;
     background-position: center;
 
@@ -79,7 +79,7 @@
  
 @media (min-width:1521px) {
 .further-information-wrapper  {
-     background-image: url(/img/illustrations/illustration.png);
+     background-image: url(../img/illustrations/illustration.png);
     background-repeat: no-repeat;
     background-position: left top;
     min-width: 720px;
@@ -88,7 +88,7 @@
 
 @media (min-width:1140px) and (max-width:1520px) {
 .further-information-wrapper {
-     background-image: url(/img/illustrations/illustration2.png);
+     background-image: url(../img/illustrations/illustration2.png);
     background-repeat: no-repeat;
     background-position: left top;
     min-width: 720px;
