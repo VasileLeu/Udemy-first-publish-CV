@@ -1,0 +1,320 @@
+* {
+    box-sizing: border-box;
+}
+
+.input {
+    width: 275px;
+    height: 51px;
+    border-radius: 19px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff9df 0%, #fffdf4 100%);
+    color: #2e435e;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0px 26px;
+}
+.input:focus {
+    box-shadow: 2px 3px 5px rgb(200, 178, 169) inset;
+    outline: 0;
+    border: none;
+}
+@media (min-width:350px) {
+.input {
+    width: 293px;
+    height: 51px;
+    border-radius: 19px;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #fff9df 0%, #fffdf4 100%);
+    color: #2e435e;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0px 26px;
+}
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #2e435e;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #2e435e;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #2e435e;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #2e435e;
+}
+.checkbox {
+  margin-left: 25px;
+  display: none;
+}
+.checkbox:checked + .checkbox-fake::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(235,110,56,1.0);
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+
+}
+
+.checkbox-fake {
+  width: 20px;
+  height: 20px;
+  box-shadow: 2px 2px 0 rgba(14, 15, 33, 0.04);
+  border: 1px solid rgba(172, 172, 172, 0.4);
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-left: 25px;
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox-fake::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background-color: rgba(235,110,56,1.0);
+  border-radius: 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in;
+}
+
+.checkbox-description {
+    /* Style for "I accept t" */
+  color: #0d3e60;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+
+.checkbox-description a{
+    color: #0d3e60;
+    font-family: "Poppins";
+    font-weight: 700;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+.submit {
+    /* Style for "Rounded Re" */
+    width: 216px;
+    height: 52px;
+    border-radius: 20px;
+    background-image: linear-gradient(to top, #eb5238 0%, #eb6f38 100%);
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 26px;
+    margin-right: 27px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.submit:hover {
+        opacity: 0.7;
+        cursor: pointer;
+}
+
+.form-notice {
+  color: #0d3e60;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-top: 20px;
+
+}
+.form-notice a{
+  font-family: Poppins;
+  font-weight: 700;
+  color: #eb5238;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: underline;
+}
+.submit-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 156px;
+}
+@media (min-width:500px) {
+.submit-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 156px;
+}
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+}
+@media (min-width:600px) {
+.form-group  {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+}
+@media (min-width:1140px) {
+.form-group  {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+}
+
+
+.label-pointer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
+  margin-top: 20px;
+}
+@media (min-width:600px) {
+.label-pointer {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0px 15px 0px 15px;
+    width: 100%;
+}
+
+
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px;
+    position: relative;
+  }
+}
+
+.about-media {
+   display: flex;
+   flex-wrap: wrap;
+}
+@media (min-width:850px) {
+.about-media  {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: initial;
+}
+}
+
+@media (min-width:1140px) {
+.about-media  {
+  flex-wrap: initial;
+  display: flex;
+  justify-content: space-between;
+}
+}
+
+
+
+.scrollToTop {
+    right: 15px;
+    bottom: 15px;
+    display: none;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color: rgba(235, 82, 56, 0.2);
+    position: fixed;
+    transform: rotate(180deg);
+    cursor: pointer;
+} 
+
+@media (max-width:460px) {
+.scrollToTop {
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: rgba(235, 82, 56, 0.2);
+    position: fixed;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+}
+
+
+@media (min-width:1140px) {
+.scrollToTop {
+    display: none;
+    right: 70px;
+    bottom: 70px;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    background-color: rgba(235, 82, 56, 0.2);
+    position: fixed;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+}
+
+.scrollToTop-icon {
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 55px;
+    height: 55px;
+    display: block;
+    background-color: #ED543A;
+    border-radius: 50%;
+    background-image: url(/img/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width:460px) {
+.scrollToTop-icon  {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    background-color: #ED543A;
+    border-radius: 50%;
+    background-image: url(/img/icons/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+}
